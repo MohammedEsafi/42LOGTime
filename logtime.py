@@ -62,7 +62,7 @@ with requests.Session() as session:
             continue
         # Decode the JSON response into a dictionary and use the data
         data = response.json()
-        d = datetime.datetime.strptime("2019-06-01", "%Y-%m-%d")
+        d = datetime.datetime.strptime("2019-10-01", "%Y-%m-%d")
         h = 0;
         for key in data:
             if datetime.datetime.strptime(key, "%Y-%m-%d") >= d:
